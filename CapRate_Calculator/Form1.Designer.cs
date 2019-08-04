@@ -146,7 +146,7 @@
             this.label1.Size = new System.Drawing.Size(283, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "The annual fee to recoup costs should be...";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            //this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // answer
             // 
@@ -157,7 +157,7 @@
             this.answer.Size = new System.Drawing.Size(434, 46);
             this.answer.TabIndex = 9;
             this.answer.Text = "Currently undetermined";
-            this.answer.Click += new System.EventHandler(this.Answer_Click);
+            //this.answer.Click += new System.EventHandler(this.Answer_Click);
             // 
             // label2
             // 
