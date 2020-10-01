@@ -48,12 +48,12 @@ namespace CapRate_Calculator
 
         //Calculates average cost per year, not taking into account interest on money received
         public float CalcYearlyFee(float cost, float rate, int term) {
-            float a;
-            float rateAsMultiple = 1 + (rate / 100);
+            float annualFee;
+            float ratio = 1 + (rate / 100);
+            double requiredReturn = ((ratio - 1) * Math.Pow(ratio, term)) / (Math.Pow(ratio, term) - 1);
             //lifeTimeCost not yet adjusted for interest on received payments
-            float lifeTimeCost = cost * (float) Math.Pow(rateAsMultiple, term);
-            a = lifeTimeCost / term;
-            return a;
+            annualFee = cost * (float)requiredReturn;
+            return annualFee;
         }
     }
 }

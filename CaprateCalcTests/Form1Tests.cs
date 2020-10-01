@@ -23,10 +23,10 @@ namespace CapRate_Calculator.Tests
             float amount = 1000;
             float rate = 8.00f;
             int timeSpan = 12;
-
+            float myDelta = (float) 0.001;
             Form1 calc = new Form1();
 
-            Assert.AreEqual(100,calc.CalcYearlyFee(amount, rate, timeSpan));
+            Assert.AreEqual(132.695,calc.CalcYearlyFee(amount, rate, timeSpan), myDelta);
 
             
         }
